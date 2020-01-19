@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ config.title }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Carlo Refice's Home Page" />
+    <meta name="author" content="Carlo Refice" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="sitemap">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+        <ul class="external">
+          <li><a href="https://github.com/CRefice">GitHub</a></li>
+          <li><a href="mailto:carlo@refice.dev">Email</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="portrait">
+        <img alt="My Face" src="{{ resize_image(path="portrait.jpg", width=350,
+        height=350) }}" />
+      </div>
+      <h1>Carlo Refice</h1>
+      <section>
+        {{ section.content | safe }}
+      </section>
+    </main>
+
+    <footer>© 2020 Carlo Refice</footer>
+  </body>
+</html>

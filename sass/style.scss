@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap");
+
+$background-color: #fdfdfd;
+$text-color: #222;
+$accent-color: #f0544f;
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+  background: $background-color;
+  color: $text-color;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  margin: 20px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  ul {
+    padding: 0;
+    margin: 5px 0;
+    flex-grow: 1;
+  }
+
+  li {
+    padding: 10px;
+    display: inline;
+  }
+}
+
+.portrait img {
+  width: 80%;
+  max-width: 350px;
+  border-radius: 50%;
+}
+
+main {
+  h1 {
+    margin: 1.5% 0;
+    font-size: 3em;
+    font-family: "Lato", sans-serif;
+  }
+  section {
+    margin: 0 5%;
+  }
+}
+
+footer {
+  height: 2em;
+  color: #7c7a7a;
+}
