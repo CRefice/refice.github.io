@@ -31,22 +31,18 @@ body {
   justify-content: space-between;
 }
 
-nav {
-  margin: 20px 0 0;
+.main-nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  ul {
-    padding: 0;
-    margin: 5px 0;
-    flex-grow: 1;
-  }
+  padding-left: 0%;
 
   li {
     padding: 10px;
     display: inline;
   }
+}
+
+.push {
+  margin-left: auto;
 }
 
 .portrait img {
