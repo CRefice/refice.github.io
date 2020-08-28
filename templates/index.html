@@ -11,18 +11,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li class="push"><a href="mailto:carlo@refice.dev">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
+  <body class="centered">
+    {% include "header.html" %}
     <main>
       <div class="portrait">
         <img alt="My Face" src="{{ resize_image(path="portrait.jpg", width=350,
@@ -33,7 +23,6 @@
         {{ section.content | safe }}
       </section>
     </main>
-
-    <footer>© 2020 Carlo Refice</footer>
+    {% include "footer.html" %}
   </body>
 </html>
